@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Add Video</title>
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Logo</a><button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fa fa-bars"></i></button
+            ><!-- Navbar Search-->
+            <!--<form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" />
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </form>-->
+            <!-- Navbar-->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-fw"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="#">Activity Log</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#bannerlinks" aria-expanded="false" aria-controls="collapseLayouts"
+                                ><div class="sb-nav-link-icon"><i class="fa fa-columns"></i></div>
+                                Banner
+                                <div class="sb-sidenav-collapse-arrow"><i class="fa fa-angle-down"></i></div
+                            ></a>
+                            <div class="collapse" id="bannerlinks" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="view-banner.html">View Banner</a>
+                                    <a class="nav-link" href="add-banner.html">Add New Banner</a>
+                                </nav>
+                            </div>
+
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#photolinks" aria-expanded="false" aria-controls="collapseLayouts"
+                                ><div class="sb-nav-link-icon"><i class="fa fa-columns"></i></div>
+                                Photo Gallery
+                                <div class="sb-sidenav-collapse-arrow"><i class="fa fa-angle-down"></i></div
+                            ></a>
+                            <div class="collapse" id="photolinks" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="view-photo.html">View Photo Gallery</a>
+                                    <a class="nav-link" href="add-photo.html">Add New Photo</a>
+                                </nav>
+                            </div>
+                            
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#videolinks" aria-expanded="false" aria-controls="collapseLayouts"
+                                ><div class="sb-nav-link-icon"><i class="fa fa-columns"></i></div>
+                                Video Gallery
+                                <div class="sb-sidenav-collapse-arrow"><i class="fa fa-angle-down"></i></div
+                            ></a>
+                            <div class="collapse" id="videolinks" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="view-video.html">View Video Gallery</a>
+                                    <a class="nav-link" href="add-video.html">Add New Video</a>
+                                </nav>
+                            </div>
+
+                            
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#musiclinks" aria-expanded="false" aria-controls="collapseLayouts"
+                                ><div class="sb-nav-link-icon"><i class="fa fa-columns"></i></div>
+                                Music Gallery
+                                <div class="sb-sidenav-collapse-arrow"><i class="fa fa-angle-down"></i></div
+                            ></a>
+                            <div class="collapse" id="musiclinks" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="view-music.html">View Music Gallery</a>
+                                    <a class="nav-link" href="add-music.html">Add New Music</a>
+                                </nav>
+                            </div>
+
+                            
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#eventslinks" aria-expanded="false" aria-controls="collapseLayouts"
+                                ><div class="sb-nav-link-icon"><i class="fa fa-columns"></i></div>
+                                Events
+                                <div class="sb-sidenav-collapse-arrow"><i class="fa fa-angle-down"></i></div
+                            ></a>
+                            <div class="collapse" id="eventslinks" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="view-event.html">View all Events</a>
+                                    <a class="nav-link" href="add-event.html">Add New Events</a>
+                                </nav>
+                            </div>
+
+                            
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#bloglinks" aria-expanded="false" aria-controls="collapseLayouts"
+                                ><div class="sb-nav-link-icon"><i class="fa fa-columns"></i></div>
+                                Blog
+                                <div class="sb-sidenav-collapse-arrow"><i class="fa fa-angle-down"></i></div
+                            ></a>
+                            <div class="collapse" id="bloglinks" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="view-blog.html">View all Blog</a>
+                                    <a class="nav-link" href="add-blog.html">Add New Blog</a>
+                                </nav>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:</div>
+                        Admin
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid">
+                        <h5 class="page-heading mt-3 mb-3 border">Add Video</h5>
+                        <!--<ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">Dashboard</li>
+                        </ol>-->
+
+                        <div class="row mt-3">
+                            <!--<div class="col-md-12 text-right">
+                                <span class="d-inline-block btn btn-primary mb-3"><i class="fa fa-table mr-1"></i>Add New Blog</span>
+                            </div>-->
+                            <div class="col-md-12">
+                                <div class="border add-photo p-3">
+                                    <form>
+                                        <div class="form-group">
+                                            <label class="mb-1" for="">Video Title</label>
+                                            <input class="form-control py-4" id="" type="text" placeholder="Enter Video Title" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="mb-1" for="">Video Description</label>
+                                            <textarea name="editor1"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="mb-1" for="">Video Category</label>
+                                            <input class="form-control py-4" id="" type="text" placeholder="Enter Video Category" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="mb-1" for="">Video Sub Category</label>
+                                            <input class="form-control py-4" id="" type="text" placeholder="Enter Video Sub Category" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="mb-1" for="">Author Name</label>
+                                            <input class="form-control py-4" id="" type="text" placeholder="Enter Auther Name" />
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="upload">
+                                                <div class="upload-btn-wrapper">
+                                                    <button class="uploadbtn">Upload a file</button>
+                                                    <input type="file" name="myfile" />
+                                                  </div>
+                                                <div class="upload__files">
+                                                </div>
+                                              </div>
+                                        </div>
+                                        
+                                        <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
+                                            <a class="btn btn-primary" href="">Save</a>
+                                        </div>
+                                    </form>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted w-100 text-center">Copyright &copy; Your Website 2020</div>
+                            <!--<div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>-->
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script>
+            CKEDITOR.replace( 'editor1' );
+        </script>
+    </body>
+</html>
